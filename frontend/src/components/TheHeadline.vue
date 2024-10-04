@@ -1,6 +1,10 @@
 <template>
   <section>
-    <h1>{{ action }} for everyone</h1>
+    <h1>
+      <span :class="actionClasses">{{ action }}</span>
+      <br />
+      for everyone
+    </h1>
     <h2>Find your next job at Bobo Corp.</h2>
   </section>
 </template>
