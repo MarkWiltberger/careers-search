@@ -14,6 +14,16 @@ export default {
       interval: null,
     };
   },
+  computed: {
+    actionClasses() {
+      return {
+        build: this.action === "Build",
+        create: this.action === "Create",
+        design: this.action === "Design",
+        code: this.action === "Code",
+      };
+    },
+  },
   created() {
     this.changeTitle();
   },
