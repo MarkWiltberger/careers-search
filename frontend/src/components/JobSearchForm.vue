@@ -12,6 +12,7 @@
           :value="role"
           placeholder="Software Engineer"
           class="w-full text-lg font-normal focus:outline-none"
+          @input="updateRole"
         />
       </div>
 
@@ -28,6 +29,7 @@
           :value="location"
           placeholder="Los Angeles"
           class="w-full text-lg font-normal focus:outline-none"
+          @input="location = $event.target.value"
         />
       </div>
     </div>
@@ -46,6 +48,11 @@ export default {
       role: "",
       location: "",
     };
+  },
+  methods: {
+    updateRole(event) {
+      this.role = event.target.value;
+    },
   },
 };
 </script>
