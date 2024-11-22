@@ -7,7 +7,10 @@
     <div class="flex h-full flex-1 flex-nowrap text-base font-light">
       <div class="relative flex h-full flex-1 items-center pr-3">
         <label class="absolute left-0 -top-10">Role</label>
-        <text-input placeholder="Software Engineer" />
+        <text-input
+          placeholder="Software Engineer"
+          @handle-input="updateRole"
+        />
       </div>
 
       <span
@@ -18,7 +21,7 @@
 
       <div class="relative flex h-full flex-1 items-center pl-3">
         <label class="absolute left-0 -top-10">Where?</label>
-        <text-input placeholder="Los Angeles" />
+        <text-input placeholder="Los Angeles" @handle-input="updateLocation" />
       </div>
     </div>
 
@@ -37,6 +40,14 @@ export default {
       role: "",
       location: "",
     };
+  },
+  methods: {
+    updateRole(payload) {
+      this.role = payload;
+    },
+    updateLocation(payload) {
+      this.location = payload;
+    },
   },
 };
 </script>
