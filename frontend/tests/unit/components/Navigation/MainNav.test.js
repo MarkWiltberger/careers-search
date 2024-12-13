@@ -11,6 +11,7 @@ describe("MainNav", () => {
         stubs: {
           FontAwesomeIcon: true,
           RouterLink: RouterLinkStub,
+          TheSubnav: true,
         },
       },
     });
