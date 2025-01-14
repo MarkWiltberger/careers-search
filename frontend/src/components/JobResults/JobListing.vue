@@ -48,5 +48,9 @@
 <script>
 export default {
   name: "JobListing",
+  props: {
+    type: Object,
+    required: true,
+  },
 };
 </script>
