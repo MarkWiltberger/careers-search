@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/vue";
+import { RouterLinkStub } from "@vue/test-utils";
 import axios from "axios";
 
 import JobListings from "@/components/JobResults/JobListings.vue";
@@ -15,7 +16,13 @@ describe("JobListings", () => {
   it("creates a job listing for every job", async () => {
     axios.get.mockResolvedValue({ data: Array(15).fill({}) });
 
-    render(JobListings);
+    render(JobListings, {
+      global: {
+        stubs: {
+          RouterLink: RouterLinkStub,
+        },
+      },
+    });
 
     const jobListings = await screen.findAllByRole("listitem");
     expect(jobListings).toHaveLength(15);
