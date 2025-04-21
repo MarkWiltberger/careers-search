@@ -10,7 +10,7 @@
         </div>
       </div>
 
-      <collapsible-accordion />
+      <collapsible-accordion>Child</collapsible-accordion>
     </section>
   </div>
 </template>
