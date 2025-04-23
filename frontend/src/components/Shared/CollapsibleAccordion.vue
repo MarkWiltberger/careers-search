@@ -11,7 +11,9 @@
     </div>
 
     <div v-if="isOpen" class="mt-5 w-full">
-      <slot></slot>
+      <slot>
+        <p>no fields</p>
+      </slot>
     </div>
   </div>
 </template>
