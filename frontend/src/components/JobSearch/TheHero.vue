@@ -18,7 +18,7 @@
     </section>
 
     <spot-light class="flex flex-row justify-center pb-16">
-      <template v-slot:default="slotProps">
+      <template #default="slotProps">
         <router-link
           to="/jobs/results"
           class="mx-5 flex h-96 w-72 flex-col rounded-lg border bg-brand-gray-2"
