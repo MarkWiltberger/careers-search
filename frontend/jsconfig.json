@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "checkJs": true, // Enable type checking for JavaScript files
+    "jsx": "preserve", // If you use JSX (e.g., in Vue render functions)
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "tests/**/*" // Make sure your tests are included
+  ],
+  "exclude": ["node_modules", "dist"]
+}
