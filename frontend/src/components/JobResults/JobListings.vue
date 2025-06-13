@@ -1,7 +1,7 @@
 <template>
   <main class="pg-8 flex-auto bg-brand-gray-2">
     <ol>
-      <job-listing v-for="job in displayedJobs" key="job.id" :job="job" />
+      <job-listing v-for="job in displayedJobs" :key="job.id" :job="job" />
     </ol>
 
     <div class="mx-auto mt-8">
