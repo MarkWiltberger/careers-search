@@ -34,6 +34,8 @@ export default {
 </script>
 
 <style scoped>
+@reference '../../index.css';
+
 button {
   @apply px-5 py-3 font-medium;
 }

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-brand-gray-1: #dadce0;
@@ -7,6 +7,6 @@
   --color-brand-blue-1: #1967d2;
   --color-brand-blue-2: #4285f4;
   --color-brand-green-1: #137333;
-  --box-shadow-blue: 0 0 3px 3px #4285f4;
-  --box-shadow-gray: 0 1px 3px 0 rgba(60, 64, 67, 0.3);
+  --shadow-blue: 0 0 3px 3px #4285f4;
+  --shadow-gray: 0 1px 3px 0 rgba(60, 64, 67, 0.3);
 }
